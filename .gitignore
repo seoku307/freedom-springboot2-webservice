@@ -1,4 +1,5 @@
 # Project exclude paths
+# 모든 커밋 대상에서 제외되도록 처리
 /.gradle/
 /.idea/
 /build/
