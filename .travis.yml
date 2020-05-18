@@ -16,9 +16,9 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r freedom-springboot2-webservice
+  - zip -r freedom-springboot-webservice
   - mkdir -p deploy
-  - mv freedom-springboot2-webservice.zip deploy/freedom-springboot2-webservice.zip
+  - mv freedom-springboot-webservice.zip deploy/freedom-springboot-webservice.zip
 
 deploy:
   - provider: s3
