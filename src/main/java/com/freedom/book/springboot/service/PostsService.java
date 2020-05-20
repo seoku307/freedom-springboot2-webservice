@@ -41,7 +41,7 @@ public class PostsService {
     @Transactional(readOnly = true) //1.
     public List<PostsListResponseDto> findAllDesc() {
         return postsRepository.findAllDesc().stream()
-                .map(PostsListResponseDto:: new) //2.
+                .map(PostsListResponseDto::new) //2.
                 .collect(Collectors.toList());
     }
 
